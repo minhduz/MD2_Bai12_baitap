@@ -70,4 +70,15 @@ public class BinaryTree {
         }
     }
 
+    public void delete(int key){
+        deleteNode(this.root,key);
+    }
+
+    private void deleteNode(Node node, int key) {
+        searchNode(node,key);
+        if (node.getLeft()==null && node.getRight()==null) {
+            delete(key);
+        }
+    }
+
 }

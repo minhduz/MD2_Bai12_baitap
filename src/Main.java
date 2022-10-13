@@ -6,6 +6,7 @@ public class Main {
         bt.insert(10);
         bt.insert(9);
         bt.insert(15);
+        bt.delete(10);
         bt.postOrder(bt.getRoot());
         System.out.println("");
         bt.preOrder(bt.getRoot());
